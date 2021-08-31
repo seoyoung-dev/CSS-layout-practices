@@ -1,0 +1,74 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #f6f6f6;
+  padding: 50px 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#poster {
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: solid black 2px;
+}
+
+.title__country {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 10px 0px 35px 0px;
+  opacity: 0.6;
+}
+
+.detail__info {
+  display: flex;
+}
+
+.detail__info__country {
+  padding-right: 30px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.circles {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.babyblue {
+  background-color: #bae1f2;
+}
+
+.gray {
+  background-color: #626365;
+}
+
+.green {
+  background-color: #04a364;
+}
