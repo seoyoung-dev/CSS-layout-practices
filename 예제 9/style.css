@@ -1,0 +1,182 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr 1fr;
+  grid-template-rows: 80% 1fr;
+  grid-gap: 2px;
+}
+
+body > div {
+  background-color: white;
+}
+
+.a1Office {
+  padding: 10px;
+  grid-row: span 2;
+}
+
+.a1Office__subtitle {
+  padding-top: 30px;
+  font-size: 25px;
+  line-height: 115%;
+}
+
+ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+ul li:first-child {
+  background: gray;
+}
+
+.a1Office__info {
+  position: absolute;
+  bottom: 30px;
+}
+
+.home {
+  padding: 10px;
+}
+
+.home__subtitle {
+  padding-top: 20px;
+  font-size: 30px;
+  line-height: 130%;
+}
+
+.home__content p {
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.images {
+  grid-column: span 2;
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.images div {
+  background: white;
+}
+
+.images > div:first-child {
+  grid-row: span 2;
+}
+
+.images div:nth-child(odd) {
+  width: 100%;
+  background-image: url(src/1.JPG);
+  background-size: cover;
+}
+
+.images div:nth-child(even) {
+  width: 100%;
+  background-image: url(src/2.JPG);
+  background-size: cover;
+}
+
+#collection {
+  background: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 50%;
+  grid-gap: 2px;
+}
+
+#collection > div {
+  background: white;
+}
+
+#collection > div:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#collection > div:last-child {
+  grid-column: span 2;
+}
+
+#collection div:nth-child(odd) {
+  width: 100%;
+  background-image: url(src/1.JPG);
+  background-size: cover;
+}
+
+#collection div:nth-child(even) {
+  width: 100%;
+  background-image: url(src/2.JPG);
+  background-size: cover;
+}
+
+.services {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.etc {
+  grid-column: span 2;
+  background: black;
+  display: grid;
+  grid-template-columns: 15% 15% 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.etc div:nth-child(odd) {
+  width: 100%;
+  background-image: url(src/1.JPG);
+  background-size: cover;
+}
+
+.etc div:nth-child(even) {
+  width: 100%;
+  background-image: url(src/2.JPG);
+  background-size: cover;
+}
+
+.etc div:first-child {
+  grid-row: span 2;
+}
+
+.etc div:nth-child(3) {
+  grid-row: span 2;
+}
+
+.a1Office__title {
+  align-self: flex-end;
+}
+
+.services__subtitle {
+  font-size: 25px;
+}
+
+.title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+pre {
+  font-size: 15px;
+}
